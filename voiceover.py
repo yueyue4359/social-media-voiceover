@@ -8,4 +8,5 @@ def synthesize_f5tts(transcript: str, ref_text: str, gen_text: str, ref_audio: s
 
 
 if __name__ == "__main__":
+  sample_text = "This is a sample text for synthesis."
   synthesize_f5tts(sample_text)
