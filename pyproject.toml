@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "social-media-voiceover"
+version = "0.1.0"
+description = "Generate voiceover for your social media videos using AI"
+authors = ["yueyue4359 dapao0931@gmail.com"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+f5-tts = "*"
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.pylint.MASTER]
+ignore-patterns = ["venv"]
