@@ -1,11 +1,10 @@
 # social-media-voiceover
-Generate voiceover for your social media videos using AI
+Generate super realistic voiceover for any social media content using f5-tts
 
 
 You need to add your voice named: `ref_audio.wav` in the file and provide the `ref_text` 
-I have also provided some existing style 
 
-Please see the F5-TTS [repository](https://github.com/SWivid/F5-TTS/tree/main/src/f5_tts/infer) for more details about inference
+For more details about inference please read the F5-TTS [repository](https://github.com/SWivid/F5-TTS/tree/main/src/f5_tts/infer)
 
 ## Installation
 
@@ -17,13 +16,15 @@ git clone https://github.com/yueyue4359/social-media-voiceover.git
 
 conda create -n f5tts-env
 conda activate f5tts-env
-pip install -r requirements.txt
+poetry install
+pip install f5-tts
 ```
 
 ## Prepare Your Audio Sample
 
 Place a reference audio sample (e.g., your own voice) in the root directory of the project and name it:
 ```voice_sample.wav```
+Otherwise it will use the default voice.
 
 ## Inference
 
